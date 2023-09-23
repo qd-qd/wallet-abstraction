@@ -1,0 +1,19 @@
+# directories
+broadcast
+cache
+lib
+node_modules
+out
+.vscode
+docs
+
+# files
+*.env
+*.log
+.DS_Store
+.pnp.*
+lcov.info
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+README.md

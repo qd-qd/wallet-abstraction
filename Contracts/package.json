@@ -1,0 +1,25 @@
+{
+  "name": "wallet-abstraction-contract",
+  "version": "0.0.1",
+  "description": "ETHGlobal NY '23 hackathon",
+  "author": "qd-qd <qdqdqdqdqd@protonmail.com>",
+  "repository": "https://github.com/qd-qd/wallet-abstraction",
+  "bugs": "https://github.com/qd-qd/wallet-abstraction/issues",
+  "homepage": "https://github.com/qd-qd/wallet-abstraction#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "engines": {
+    "node": ">= 18"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --check \"**/*.{json,md,yml}\"",
+    "prettier:fix": "prettier --check \"**/*.{json,md,yml}\""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "prettier": "^2.8.8"
+  }
+}
