@@ -1,0 +1,32 @@
+{
+  "name": "paymaster",
+  "version": "0.0.1",
+  "description": "Paymaster",
+  "scripts": {
+    "dev": "nodemon src/index.ts",
+    "start": "ts-node src/index.ts",
+    "prettier": "prettier . --write",
+    "lint": "eslint . --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "0xkvn",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ethers": "^5.7.2",
+    "jsonrpc-lite": "^2.2.0",
+    "moleculer": "^0.14.31",
+    "moleculer-web": "^0.10.6",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.1",
+    "userop": "^0.3.2"
+  }
+}
