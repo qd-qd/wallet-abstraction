@@ -16,10 +16,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prettier": "prettier --check \"**/*.{json,md,yml}\"",
-    "prettier:fix": "prettier --check \"**/*.{json,md,yml}\""
+    "prettier:fix": "prettier --check \"**/*.{json,md,yml}\"",
+    "solhint": "solhint {script,src,test}/**/*.sol",
+    "solhint:fix": "solhint {script,src,test}/**/*.sol --fix"
   },
   "license": "MIT",
   "dependencies": {
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "solhint-community": "^3.7.0-rc01"
   }
 }
