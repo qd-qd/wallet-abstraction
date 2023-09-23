@@ -4,3 +4,9 @@
 [submodule "Contracts/lib/solady"]
 	path = Contracts/lib/solady
 	url = https://github.com/vectorized/solady
+[submodule "Contracts/lib/account-abstraction"]
+	path = Contracts/lib/account-abstraction
+	url = https://github.com/eth-infinitism/account-abstraction
+[submodule "Contracts/lib/openzeppelin-contracts"]
+	path = Contracts/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts
