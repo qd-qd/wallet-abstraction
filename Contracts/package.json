@@ -18,7 +18,9 @@
     "prettier": "prettier --check \"**/*.{json,md,yml}\"",
     "prettier:fix": "prettier --check \"**/*.{json,md,yml}\"",
     "solhint": "solhint {script,src,test}/**/*.sol",
-    "solhint:fix": "solhint {script,src,test}/**/*.sol --fix"
+    "solhint:fix": "solhint {script,src,test}/**/*.sol --fix",
+    "fmt": "forge fmt --check",
+    "fmt:fix": "forge fmt"
   },
   "license": "MIT",
   "dependencies": {
