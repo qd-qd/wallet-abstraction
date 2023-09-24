@@ -24,7 +24,10 @@ It also prevents from fishing, as passkeys are related to a website (the site of
 ## Intallation
 
 ## Contracts addresses
-It can be checked that bytecodes are identical. Only Sepolia are verified. When we could we deployed at the same address the contracts:
+
+It can be checked that bytecodes are identical. Only Sepolia are verified. 
+When we could we deployed at the same address the contracts with nonce starting at 0. Some network specificities or failures might shift the nonce.
+
 
 * WebAuthn : 0xeec23d5e9b75e12984228c8e2c9ae578744368e2
 * Wallet Factory : 0xd5534f16ebd32dcfc6282d1e66a32d1d0abfe569
@@ -74,7 +77,7 @@ https://explorer.celo.org/alfajores/address/0xA099BA0dAe1f54f1Fd7238bd9d6885Af24
 
 ### Mantle 
 
-(2 extra transactions)
+(2 extra transactions due to network congestion)
 https://testnet.mantlescan.org/address/0xa099ba0dae1f54f1fd7238bd9d6885af2427a28c
 
 ### XDC
