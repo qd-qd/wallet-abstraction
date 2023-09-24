@@ -58,7 +58,7 @@ export class UserOpMethodHandler {
     readonly signer: Signer,
     readonly config: BundlerConfig,
     readonly entryPoint: EntryPoint
-  ) {}
+  ) { }
 
   async getSupportedEntryPoints(): Promise<string[]> {
     return [this.config.entryPoint];
@@ -161,11 +161,11 @@ export class UserOpMethodHandler {
     const errorResult = await this.entryPoint.callStatic
       .simulateValidation(userOp)
       .catch((e) => e);
-    
+
     if (errorResult) {
-      console.log({errorResult})
+      console.log({ errorResult })
     }
-    
+
     if (errorResult.errorName === "FailedOp") {
       throw new RpcError(
         errorResult.errorArgs.at(-1),
@@ -213,13 +213,10 @@ export class UserOpMethodHandler {
           jsonrpc: "2.0"
         },
         {
-          responseType: "blob"
+          responseType: "json"
         }
       );
-      const regexp = new RegExp('"gas":"(0x.*)",');
-      callGasLimit =
-        regexp.exec(data.slice(0, 100).toString())?.[1] ||
-        (21_000).toString(16);
+      callGasLimit = data.result.gas;
       console.timeEnd("AXIOS GAS LIMIT");
     } else {
       callGasLimit = await this.provider
