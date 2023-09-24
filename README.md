@@ -36,7 +36,7 @@ A user take a picture of himself by clicking on the link, is asked to perform a 
 
 ## How does it works ?
 
-This project provides the best optimal **UX OPTIMIZATION** with a completely frictionless onboarding of a new user in a single click. It combines the use of **our** OSS solidity [FCL](https://github.com/rdubois-crypto/FreshCryptoLib) library (secp256R1 best EVM implementation, presented at EthCC) to implement a FIDO/passkeys powered Userop. We combine it with Infinitism [ERC4337](https://github.com/rdubois-crypto/FreshCryptoLib) Entrypoint and a custom PayMaster to pay for the user fees, making it accessible to complete who do not know anything about crypto'. The implementation of the [WebAuthnAccount.sol] (https://github.com/qd-qd/wallet-abstraction/blob/86ac70f17189caf8e72e5c7817b52cda00438340/Contracts/src/Accounts/WebAuthnAccount.sol#L6) realizes this combination.
+This project provides the best optimal **UX OPTIMIZATION** with a completely frictionless onboarding of a new user in a single click. It combines the use of **our** OSS solidity [FCL](https://github.com/rdubois-crypto/FreshCryptoLib) library (secp256R1 best EVM implementation, presented at EthCC) to implement a FIDO/passkeys powered Userop. We combine it with Infinitism [ERC4337](https://github.com/rdubois-crypto/FreshCryptoLib) Entrypoint and a custom PayMaster to pay for the user fees, making it accessible to complete who do not know anything about crypto'. The implementation of the [WebAuthnAccount.sol](https://github.com/qd-qd/wallet-abstraction/blob/86ac70f17189caf8e72e5c7817b52cda00438340/Contracts/src/Accounts/WebAuthnAccount.sol) realizes this combination.
 
 ## Why is it simple, efficient and secure ?
 
