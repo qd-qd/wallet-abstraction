@@ -223,7 +223,7 @@ function PhotoBooth() {
       {step === STEPS.username && (
         <div className="form-control w-full max-w-xs items-center">
           <label className="label self-start">
-            <span className="label-text text-lg">Pick a signature</span>
+            <span className="label-text text-lg">Choose an username</span>
           </label>
           <input
             type="text"

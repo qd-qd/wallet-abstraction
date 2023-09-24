@@ -72,7 +72,7 @@ const ChatBubble = ({ transactionHash }: Props, ref: Ref<ChatBubbleHandle>) => {
           </div>
         </animated.div>
         <animated.span style={textStyle}>
-          <div className="chat-bubble pointer-events-none bg-pink-500">Just minted !</div>
+          <div className="chat-bubble pointer-events-none bg-pink-500">Just minted!</div>
           <div className="chat-footer opacity-50">
             See it{' '}
             <a
