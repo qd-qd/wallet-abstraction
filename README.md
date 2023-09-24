@@ -98,6 +98,7 @@ https://sepolia.etherscan.io/address/0x97d6f9fe747377a6164426b89d3c32fe87da8dde
 * NFT Polaroid : https://mumbai.polygonscan.com/address/0xa848a42175f941ff7ebf8daab6b70cad60be2062
 
 ### Linea
+(canonical addresses)
 
 0xEeC23D5e9B75E12984228c8E2C9AE578744368e2
 https://explorer.goerli.linea.build/address/0xd5534f16EBD32DCFC6282D1e66A32d1d0abfE569
@@ -114,6 +115,20 @@ https://stylus-testnet-explorer.arbitrum.io/address/0xd5534f16EBD32DCFC6282D1e66
 https://stylus-testnet-explorer.arbitrum.io/address/0x29147591F22Df4A47cb165fcc3aa289470F02cF4
 https://stylus-testnet-explorer.arbitrum.io/address/0x187488B375eb65a2254e4e36Cc7098138073ED5f
 
+### Scroll
+(canonical addresses)
+https://sepolia-blockscout.scroll.io/address/0xa848A42175f941FF7EbF8DaAB6b70cad60Be2062
+
+### CELO
+(canonical addresses)
+https://explorer.celo.org/alfajores/address/0xA099BA0dAe1f54f1Fd7238bd9d6885Af2427A28C/transactions#address-tabs
+
+### Mantle 
+
+(2 extra transactions)
+https://testnet.mantlescan.org/address/0xa099ba0dae1f54f1fd7238bd9d6885af2427a28c
+
+### XDC
 
 
 
