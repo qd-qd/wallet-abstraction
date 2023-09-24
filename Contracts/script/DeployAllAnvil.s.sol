@@ -30,9 +30,16 @@ contract DeployAnvil is BaseScript, Test {
         PolaroidNFT polaroidNFT = new PolaroidNFT();
         console2.log("POLAROID NFT", address(polaroidNFT));
 
-        paymaster.addStake{ value: 5 ether }(60 * 10);
+        paymaster.addStake{ value: 1 wei }(60 * 10);
         paymaster.deposit{ value: 10 ether }();
         console2.log("paymaster deposit", paymaster.getDeposit());
+
+        EntryPoint.DepositInfo memory DepositInfo = entryPoint.getDepositInfo(address(paymaster));
+        console2.log("paymaster staked", DepositInfo.staked);
+        console2.log("paymaster stake", DepositInfo.stake);
+        console2.log("paymaster deposit", DepositInfo.deposit);
+        console2.log("paymaster unstakeDelaySec", DepositInfo.unstakeDelaySec);
+        console2.log("paymaster withdrawTime", DepositInfo.withdrawTime);
 
         return [
             address(entryPoint),
