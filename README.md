@@ -108,6 +108,9 @@ https://explorer.goerli.linea.build/address/0xa848A42175f941FF7EbF8DaAB6b70cad60
 
 Nota: it was necessary to deploy an EntryPoint on the network, thus the nonce was shifted.
 
+https://stylus-testnet-explorer.arbitrum.io/address/0xa848A42175f941FF7EbF8DaAB6b70cad60Be2062
+https://stylus-testnet-explorer.arbitrum.io/address/0xdA470171FeB4fd852433a7A7f67e3A3918a7A154
+https://stylus-testnet-explorer.arbitrum.io/address/0xd5534f16EBD32DCFC6282D1e66A32d1d0abfE569
 https://stylus-testnet-explorer.arbitrum.io/address/0x29147591F22Df4A47cb165fcc3aa289470F02cF4
 https://stylus-testnet-explorer.arbitrum.io/address/0x187488B375eb65a2254e4e36Cc7098138073ED5f
 
