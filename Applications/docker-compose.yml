@@ -1,0 +1,69 @@
+version: "2.4"
+
+services:
+  paymaster:
+    image: "node:16-buster-slim"
+    user: "root"
+    volumes:
+      - ./paymaster:/app
+    env_file:
+      - .env
+    build:
+      context: ./paymaster
+    working_dir: /app
+    ports:
+      - "${PAYMASTER_PORT}:${PAYMASTER_PORT}"
+    command: ./run.sh
+
+  login-service:
+    image: "node:16-buster-slim"
+    user: "root"
+    volumes:
+      - ./login-service:/app
+    env_file:
+      - .env
+    build:
+      context: ./login-service
+    working_dir: /app
+    ports:
+      - "${LOGIN_SERVICE_PORT}:${LOGIN_SERVICE_PORT}"
+    command: ./run.sh
+
+  bundler:
+    image: "node:16-buster-slim"
+    user: "root"
+    volumes:
+      - ./bundler:/app
+    env_file:
+      - .env
+    build:
+      context: ./bundler
+    working_dir: /app
+    ports:
+      - "${BUNDLER_PORT}:${BUNDLER_PORT}"
+    mem_limit: 32G
+    mem_reservation: 32G
+    mem_swappiness: 100
+    memswap_limit: 32G
+    command: ./run.sh
+
+  frontend:
+    image: "node:16-buster-slim"
+    user: "root"
+    volumes:
+      - ./frontend:/app
+    env_file:
+      - .env
+    environment:
+      - VITE_NETWORK=${RPC}
+      - VITE_BUNDLER=http://localhost:${BUNDLER_PORT}/rpc
+      - VITE_PAYMASTER=http://localhost:${PAYMASTER_PORT}/paymaster
+      - VITE_ENTRYPOINT=${ENTRYPOINT_CONTRACT}
+      - VITE_WALLETFACTORY_CONTRACT=${WALLETFACTORY_CONTRACT}
+      - VITE_WEBAUTHN_CONTRACT=${WEBAUTHN_CONTRACT}
+      - VITE_POLAROID_NFT_CONTRACT=${POLAROID_NFT_CONTRACT}
+      - VITE_LOGIN_SERVICE_PORT=${LOGIN_SERVICE_PORT}
+    working_dir: /app
+    ports:
+      - "${FRONTEND_PORT}:${FRONTEND_PORT}"
+    command: ./run.sh
