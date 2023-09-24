@@ -22,19 +22,43 @@ It also prevents from fishing, as passkeys are related to a website (the site of
 
 ## Intallation
 
-### Deploy the entiere stack on Anvil
+### Contracts
+
+Once in the `Contracts` folder, set your environement variables and then:
+
+#### Deploy the entiere stack on Anvil
 
 ```bash
 forge script script/DeployAllAnvil.s.sol --private-key <PRIVATE_KEY> --broadcast -vvv --rpc-url http://localhost:8545
 ```
 
-### Deploy the stack on networks that already have an EntryPoint contract
+#### Deploy the stack on networks that already have an EntryPoint contract
 
 ```bash
 forge script script/Deploy4337FriendlyNetwork.s.sol --private-key <PRIVATE_KEY> --broadcast -vvv --rpc-url <RPC_URL>
 ```
 
-## Contracts addresses
+### Applications
+
+In the `Applications` folder, use the `.env.dist` as an example for your `.env` and then:
+
+```bash
+docker-compose up -d
+```
+
+If you're using anvil as RPC, you'll have to add in your `etc/hosts`:
+
+```
+127.0.0.1 host.docker.internal
+```
+
+then set the `RPC` environement variable of your `.env` to `http://host.docker.internal:8545` and `BUNDLER_UNSAFE` to `true`.
+
+The paymaster's `owner` is initially set to the contract deployer by default. Therefore, please remember to either assign the same address to the `PAYMASTER_PK` variable as the one used for deployment or use the `transferOwnership` function into the deployment script used.
+
+## Live contracts addresses
+
+Here is the listing of the deployed contracts on the different networks.
 
 It can be checked that bytecodes are identical. Only Sepolia are verified.
 When we could we deployed at the same address the contracts with nonce starting at 0. Some network specificities or failures might shift the nonce.
@@ -69,7 +93,7 @@ https://explorer.goerli.linea.build/address/0xa848A42175f941FF7EbF8DaAB6b70cad60
 
 ### Stylus
 
-Nota: it was necessary to deploy an EntryPoint on the network, thus the nonce was shifted.
+Nota: It was necessary to deploy an `EntryPoint` on the network, thus the nonce was shifted as the network didn't supported the EIP-4337.
 
 https://stylus-testnet-explorer.arbitrum.io/address/0xa848A42175f941FF7EbF8DaAB6b70cad60Be2062
 https://stylus-testnet-explorer.arbitrum.io/address/0xdA470171FeB4fd852433a7A7f67e3A3918a7A154
@@ -91,5 +115,3 @@ https://explorer.celo.org/alfajores/address/0xA099BA0dAe1f54f1Fd7238bd9d6885Af24
 
 (2 extra transactions due to network congestion)
 https://testnet.mantlescan.org/address/0xa099ba0dae1f54f1fd7238bd9d6885af2427a28c
-
-### XDC
