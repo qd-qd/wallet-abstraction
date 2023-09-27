@@ -1,5 +1,7 @@
 # Wallet-Abstraction -- ETHGlobal NY 2023
 
+![image](https://github.com/qd-qd/wallet-abstraction/assets/103030189/110fca35-e41c-484c-b216-444d8d68fcec)
+
 ## Table of Contents
 
 1. [Description](#description)
