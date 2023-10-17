@@ -57,12 +57,12 @@ contract Deploy4337FriendlyNetwork is BaseScript, Test {
         console2.log("POLAROID NFT", address(polaroidNFT));
 
         // Add stake and deposit to the paymaster
-        paymaster.addStake{ value: 1 ether }(60 * 10);
-        paymaster.deposit{ value: 2 ether }();
+        paymaster.addStake{ value: 0.001 ether }(60 * 10);
+        paymaster.deposit{ value: 0.002 ether }();
         console2.log("paymaster deposit", paymaster.getDeposit());
 
         // Feed the bundler
-        payable(BUNDLER).transfer(1 ether);
+        payable(BUNDLER).transfer(0.01 ether);
         console2.log("bundler balance", BUNDLER.balance);
 
         // Return the addresses of the deployed contracts

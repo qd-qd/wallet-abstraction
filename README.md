@@ -24,6 +24,7 @@
    - [Scroll](#scroll)
    - [CELO](#celo)
    - [Mantle](#mantle)
+   - [Optimism](#optimism)
 7. [Code ownership](#code-ownership)
 
 Keywords: invisible wallet, ERC4337, instant frictionless onboarding, passkeys, smartphone secure enclave, secp256r1.
@@ -45,7 +46,7 @@ This project provides the best optimal **UX OPTIMIZATION** with a completely fri
 ## Why is it simple, efficient and secure ?
 
 Passkeys is a current revolution of Web2 security. It will replace passwords management and the risks associated to it by robust ECC authentication as is an EoA. This revolution happens with the ERC-4337, and their combination will revolutionize accessibility and inclusivity to web3. With passkeys, the private key is stored in the secure enclave, which is hardened to withstand advanced attacks. As opposed to keys stored in the browser, they are stored securely.
-It also prevents from fishing, as passkeys are related to a website (the site of the dApp). The solidity verification uses FCL, implementing EVM dedicated formulas. For the hackaton sake, the version without precomputations is used. The most efficient verification function runs in 69K gas. See https://eprint.iacr.org/2023/939 for cryptographical details. 
+It also prevents from fishing, as passkeys are related to a website (the site of the dApp). The solidity verification uses FCL, implementing EVM dedicated formulas. For the hackaton sake, the version without precomputations is used. The most efficient verification function runs in 69K gas. See https://eprint.iacr.org/2023/939 for cryptographical details.
 
 ## Intallation
 
@@ -149,6 +150,11 @@ https://explorer.celo.org/alfajores/address/0xA099BA0dAe1f54f1Fd7238bd9d6885Af24
 
 (2 extra transactions due to network congestion)
 https://testnet.mantlescan.org/address/0xa099ba0dae1f54f1fd7238bd9d6885af2427a28c
+
+### Optimism
+
+(canonical addresses)
+https://goerli-optimism.etherscan.io/address/0xa099ba0dae1f54f1fd7238bd9d6885af2427a28c
 
 ## Code ownership
 
