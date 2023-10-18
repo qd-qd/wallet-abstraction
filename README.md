@@ -153,8 +153,13 @@ https://testnet.mantlescan.org/address/0xa099ba0dae1f54f1fd7238bd9d6885af2427a28
 
 ### Optimism
 
-(canonical addresses)
-https://goerli-optimism.etherscan.io/address/0xa099ba0dae1f54f1fd7238bd9d6885af2427a28c
+Deployer: https://goerli-optimism.etherscan.io/address/0xa099ba0dae1f54f1fd7238bd9d6885af2427a28c
+
+Contract Deployed:
+- WebAuthn: https://goerli-optimism.etherscan.io/address/0xeec23d5e9b75e12984228c8e2c9ae578744368e2
+- Wallet Factory: https://goerli-optimism.etherscan.io/address/0xd5534f16ebd32dcfc6282d1e66a32d1d0abfe569
+- Paymaster: https://goerli-optimism.etherscan.io/address/0xda470171feb4fd852433a7a7f67e3a3918a7a154
+- NFT Polaroid: https://goerli-optimism.etherscan.io/address/0xa848a42175f941ff7ebf8daab6b70cad60be2062
 
 ## Code ownership
 
